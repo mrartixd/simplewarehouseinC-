@@ -1,0 +1,19 @@
+﻿<Window x:Class="lkartladu.EditItems"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lkartladu"
+        mc:Ignorable="d"
+        Title="Edit items" Height="450" Width="900" MinWidth="900" MinHeight="450">
+    <Grid>
+        <Button Content="UPDATE" HorizontalAlignment="Left" Margin="50,0,0,40" VerticalAlignment="Bottom" Width="201" Height="54" FontSize="20" Background="#FF57C55C" BorderBrush="#FF096600"/>
+        <Button Content="CANCEL" HorizontalAlignment="Right" Margin="0,0,51,40" VerticalAlignment="Bottom" Width="201" Height="54" FontSize="20" Background="#FFFB4848" BorderBrush="Red"/>
+        <Button Content="CLEAR" HorizontalAlignment="Center" Margin="387.929,0,404.071,40" VerticalAlignment="Bottom" Width="100" Height="54" FontSize="20" Background="#FFF7ED0F" BorderBrush="#FF9C8701"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="50,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="50,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="50,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow"/>
+        <TextBox HorizontalAlignment="Left" Height="20" Margin="50,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow"/>
+        <DataGrid HorizontalAlignment="Left" Height="230" Margin="270,60,0,0" VerticalAlignment="Top" Width="571"/>
+    </Grid>
+</Window>
