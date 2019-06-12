@@ -60,3 +60,6 @@ C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\lkartladu.cs
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\lkartladu.csproj.CopyComplete
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\lkartladu.exe
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\lkartladu.pdb
+C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\bin\Debug\Ladu.mdf
+C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\bin\Debug\Ladu_log.ldf
+C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\lkartladu_Content.g.cs

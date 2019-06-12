@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/lkartladu/v16/Server/sqlite3
+/lkartladu/bin/Debug/Ladu.mdf
+/lkartladu/Ladu.mdf
+/lkartladu/Ladu_log.ldf

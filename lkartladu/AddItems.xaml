@@ -15,14 +15,23 @@
             <RowDefinition Height="188*"/>
             <RowDefinition Height="231*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="additembtn" Content="ADD" HorizontalAlignment="Left" Margin="50,0,0,40" VerticalAlignment="Bottom" Width="201" Height="54" FontSize="20" Background="#FF57C55C" BorderBrush="#FF096600" Grid.Row="1"/>
+        <Button x:Name="additembtn" Content="ADD" HorizontalAlignment="Left" Margin="50,0,0,40" VerticalAlignment="Bottom" Width="201" Height="54" FontSize="20" Background="#FF57C55C" BorderBrush="#FF096600" Grid.Row="1" Click="Additembtn_Click"/>
         <Button x:Name="cancelbtn" Content="CANCEL" HorizontalAlignment="Right" Margin="0,0,51,40" VerticalAlignment="Bottom" Width="201" Height="54" FontSize="20" Background="#FFFB4848" BorderBrush="Red" Grid.Row="1" Click="Cancelbtn_Click" Grid.ColumnSpan="2"/>
         <Button x:Name="clearitemsbtn" Content="CLEAR" HorizontalAlignment="Center" Margin="345,0,235,40" VerticalAlignment="Bottom" Width="100" Height="54" FontSize="20" Background="#FFF7ED0F" BorderBrush="#FF9C8701" Grid.Row="1" Click="Clearitemsbtn_Click"/>
-        <TextBox x:Name="nameitem" HorizontalAlignment="Left" Height="20" Margin="50,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow"/>
-        <TextBox x:Name="firmaitem" HorizontalAlignment="Left" Height="20" Margin="50,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow"/>
-        <TextBox x:Name="priceitem" HorizontalAlignment="Left" Height="20" Margin="50,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow" Grid.RowSpan="2"/>
-        <TextBox x:Name="date" HorizontalAlignment="Left" Height="20" Margin="50,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow" Grid.Row="1"/>
-        <DataGrid HorizontalAlignment="Left" Height="230" Margin="270,60,0,0" VerticalAlignment="Top" Width="571" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <TextBox x:Name="toodenimi" HorizontalAlignment="Left" Height="20" Margin="50,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow" Text="toodenimi"/>
+        <DatePicker x:Name="kuupaev" HorizontalAlignment="Left" Margin="50,48,0,0" VerticalAlignment="Top" Width="147"/>
+        <TextBox x:Name="kood" HorizontalAlignment="Left" Height="20" Margin="50,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow" Text="kood"/>
+        <TextBox x:Name="kaubakood" HorizontalAlignment="Left" Height="20" Margin="50,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow" Grid.Row="1" Text="kaubkood"/>
+        <ComboBox x:Name="kaubanimi" HorizontalAlignment="Left" Margin="50,51,0,0" Grid.Row="1" VerticalAlignment="Top" Width="147"/>
+        <TextBox x:Name="tk" HorizontalAlignment="Left" Height="20" Margin="230,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow" Text="tk"/>
+        <TextBox x:Name="ostuhind" HorizontalAlignment="Left" Height="20" Margin="230,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow" Text="ostuhind"/>
+        <TextBox x:Name="hindtk" HorizontalAlignment="Left" Height="20" Margin="230,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow" Text="hindtk"/>
+        <TextBlock x:Name="summa" HorizontalAlignment="Left" Margin="230,4,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBox x:Name="puhaskasum" HorizontalAlignment="Left" Height="20" Margin="388,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow" Text="puhaskasum"/>
+        <TextBox x:Name="omakastus" HorizontalAlignment="Left" Height="20" Margin="388,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow" Text="omakasutus"/>
+        <TextBox x:Name="jaaktk" HorizontalAlignment="Left" Height="20" Margin="388,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow" Text="jaaktk"/>
+        <TextBlock x:Name="jaaksumma" HorizontalAlignment="Left" Margin="388,4,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBox x:Name="muugisumma" HorizontalAlignment="Left" Height="23" Margin="602,51,0,0" TextWrapping="Wrap" Text="muugisumma" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

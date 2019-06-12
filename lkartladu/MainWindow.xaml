@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lkartladu"
         mc:Ignorable="d"
-        Title="LKart" Height="860" Width="1024" MinWidth="800" MinHeight="600">
+        Title="LKart" Height="860" Width="1280" MinWidth="800" MinHeight="600">
     <Grid x:Name="grid_Main">
-        <Menu Height="22" VerticalAlignment="Top" Width="{Binding ElementName=grid_Main,Path=ActualWidth}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="169*"/>
+            <ColumnDefinition Width="467*"/>
+        </Grid.ColumnDefinitions>
+        <Menu Height="22" VerticalAlignment="Top" Grid.ColumnSpan="2">
             <MenuItem Header="File" Height="20" FontSize="14">
                 <MenuItem x:Name="setingsbtn" Header="Settings" Click="Setingsbtn_Click"/>
                 <Separator />
@@ -15,14 +19,16 @@
             </MenuItem>
             <MenuItem x:Name="aboutbnt" Header="About" Height="20" Click="Aboutbnt_Click" FontSize="14"/>
         </Menu>
-        <Grid HorizontalAlignment="Left" Height="189" VerticalAlignment="Bottom" Width="{Binding ElementName=grid_Main,Path=ActualWidth}" Background="#FF9E9E9E">
+        <Grid HorizontalAlignment="Left" Height="188" VerticalAlignment="Bottom" Width="{Binding ElementName=grid_Main,Path=ActualWidth}" Background="#FF9E9E9E" Grid.ColumnSpan="2">
             <TextBlock HorizontalAlignment="Left" Margin="45,92,0,0" TextWrapping="Wrap" Text="Count: 9999 items in DB" VerticalAlignment="Top" FontSize="36"/>
-            <TextBlock HorizontalAlignment="Left" Margin="825,53.4,0,0" TextWrapping="Wrap" Text="01.01.2019" VerticalAlignment="Top" FontSize="20"/>
-            <TextBlock HorizontalAlignment="Left" Margin="837.37,93.5,0,0" TextWrapping="Wrap" Text="Monday" VerticalAlignment="Top" FontSize="20"/>
-            <TextBlock HorizontalAlignment="Left" Margin="837.37,133.4,0,0" TextWrapping="Wrap" Text="15:00:00" VerticalAlignment="Top" FontSize="20"/>
+            <TextBlock HorizontalAlignment="Left" Margin="1088,33,0,0" TextWrapping="Wrap" Text="01.01.2019" VerticalAlignment="Top" FontSize="20"/>
+            <TextBlock HorizontalAlignment="Left" Margin="1100,74,0,0" TextWrapping="Wrap" Text="Monday" VerticalAlignment="Top" FontSize="20"/>
+            <TextBlock HorizontalAlignment="Left" Margin="1100,113,0,0" TextWrapping="Wrap" Text="15:00:00" VerticalAlignment="Top" FontSize="20"/>
         </Grid>
-        <Button x:Name="sellitembtn" Content="Sell items" HorizontalAlignment="Left" Margin="80,401,0,0" VerticalAlignment="Top" Width="296" Height="79" FontSize="22" Click="Sellitembtn_Click"/>
-        <Button x:Name="edititembtn" Content="Edit items" HorizontalAlignment="Left" Margin="80,242,0,0" VerticalAlignment="Top" Width="296" Height="79" FontSize="22" Click="Edititembtn_Click"/>
-        <Button x:Name="additembtn" Content="Add items" HorizontalAlignment="Left" Margin="80,81,0,0" VerticalAlignment="Top" Width="296" Height="79"  FontSize="22" Click="Additembtn_Click"/>
+        <Button x:Name="sellitembtn" Content="Sell items" HorizontalAlignment="Left" Margin="20,362,0,0" VerticalAlignment="Top" Width="296" Height="79" FontSize="22" Click="Sellitembtn_Click"/>
+        <Button x:Name="edititembtn" Content="Edit items" HorizontalAlignment="Left" Margin="20,203,0,0" VerticalAlignment="Top" Width="296" Height="79" FontSize="22" Click="Edititembtn_Click"/>
+        <Button x:Name="additembtn" Content="Add items" HorizontalAlignment="Left" Margin="20,42,0,0" VerticalAlignment="Top" Width="296" Height="79"  FontSize="22" Click="Additembtn_Click"/>
+        <DataGrid Grid.Column="1" HorizontalAlignment="Left" Height="595" Margin="10,27,0,0" VerticalAlignment="Top" Width="914"/>
+        <Button x:Name="settingsbtn" Content="Settings" HorizontalAlignment="Left" Margin="20,522,0,0" VerticalAlignment="Top" Width="296" Height="78" FontSize="22"/>
     </Grid>
 </Window>
