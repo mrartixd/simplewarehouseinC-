@@ -26,9 +26,12 @@
             <TextBlock HorizontalAlignment="Left" Margin="1100,113,0,0" TextWrapping="Wrap" Text="15:00:00" VerticalAlignment="Top" FontSize="20"/>
         </Grid>
         <Button x:Name="sellitembtn" Content="Sell items" HorizontalAlignment="Left" Margin="20,362,0,0" VerticalAlignment="Top" Width="296" Height="79" FontSize="22" Click="Sellitembtn_Click"/>
-        <Button x:Name="edititembtn" Content="Edit items" HorizontalAlignment="Left" Margin="20,203,0,0" VerticalAlignment="Top" Width="296" Height="79" FontSize="22" Click="Edititembtn_Click"/>
+        <Button x:Name="edititembtn" Content="Edit row" HorizontalAlignment="Left" Margin="62,581,0,0" VerticalAlignment="Top" Width="269" Height="39" FontSize="22" Click="Edititembtn_Click" Grid.Column="1"/>
         <Button x:Name="additembtn" Content="Add items" HorizontalAlignment="Left" Margin="20,42,0,0" VerticalAlignment="Top" Width="296" Height="79"  FontSize="22" Click="Additembtn_Click"/>
-        <DataGrid Grid.Column="1" HorizontalAlignment="Left" Height="595" Margin="10,27,0,0" VerticalAlignment="Top" Width="914"/>
         <Button x:Name="settingsbtn" Content="Settings" HorizontalAlignment="Left" Margin="20,522,0,0" VerticalAlignment="Top" Width="296" Height="78" FontSize="22"/>
+        <DataGrid x:Name="rawdata" AutoGenerateColumns="True" Grid.Column="1" HorizontalAlignment="Left" Height="481" Margin="10,80,0,0" VerticalAlignment="Top" Width="914" AutoGeneratingColumn="Rawdata_AutoGeneratingColumn" SelectionChanged="Rawdata_SelectionChanged"/>
+        <TextBox x:Name="searchbox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,42,0,0" TextWrapping="Wrap" Text="Search" VerticalAlignment="Top" Width="692"/>
+        <Button Content="Search" Grid.Column="1" HorizontalAlignment="Left" Margin="761,42,0,0" VerticalAlignment="Top" Width="118" Height="23"/>
+        <Button x:Name="deleteitem" Content="Delete row" HorizontalAlignment="Left" Margin="592,581,0,0" VerticalAlignment="Top" Width="269" Height="39" FontSize="22" Grid.Column="1"/>
     </Grid>
 </Window>

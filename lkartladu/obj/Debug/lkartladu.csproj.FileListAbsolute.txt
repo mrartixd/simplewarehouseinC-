@@ -40,16 +40,12 @@ C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\bin\Debug\EntityFramew
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\bin\Debug\EntityFramework.SqlServerCompact.xml
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\lkartladu.csprojAssemblyReference.cache
-C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\AddItems.g.cs
-C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\EditItems.g.cs
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\MainWindow.g.cs
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\SellItem.g.cs
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\Settings.g.cs
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\App.g.cs
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\lkartladu_MarkupCompile.cache
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\lkartladu_MarkupCompile.lref
-C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\AddItems.baml
-C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\EditItems.baml
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\MainWindow.baml
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\SellItem.baml
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\Settings.baml
@@ -63,3 +59,7 @@ C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\lkartladu.pd
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\bin\Debug\Ladu.mdf
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\bin\Debug\Ladu_log.ldf
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\lkartladu_Content.g.cs
+C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\AddEdit\AddItems.g.cs
+C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\AddEdit\EditItems.g.cs
+C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\AddEdit\AddItems.baml
+C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\AddEdit\EditItems.baml

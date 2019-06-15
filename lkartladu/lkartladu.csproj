@@ -83,6 +83,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Class\Inventuur.cs" />
     <Compile Include="LaduDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -94,11 +95,11 @@
     <Compile Include="Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
-    <Page Include="AddItems.xaml">
+    <Page Include="AddEdit\AddItems.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="EditItems.xaml">
+    <Page Include="AddEdit\EditItems.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -106,14 +107,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="AddItems.xaml.cs">
+    <Compile Include="AddEdit\AddItems.xaml.cs">
       <DependentUpon>AddItems.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="EditItems.xaml.cs">
+    <Compile Include="AddEdit\EditItems.xaml.cs">
       <DependentUpon>EditItems.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
