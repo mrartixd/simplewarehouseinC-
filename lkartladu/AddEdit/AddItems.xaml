@@ -19,7 +19,7 @@
         <Button x:Name="cancelbtn" Content="CANCEL" HorizontalAlignment="Right" Margin="0,0,51,40" VerticalAlignment="Bottom" Width="201" Height="54" FontSize="20" Background="#FFFB4848" BorderBrush="Red" Grid.Row="1" Click="Cancelbtn_Click" Grid.ColumnSpan="2"/>
         <Button x:Name="clearitemsbtn" Content="CLEAR" HorizontalAlignment="Center" Margin="345,0,235,40" VerticalAlignment="Bottom" Width="100" Height="54" FontSize="20" Background="#FFF7ED0F" BorderBrush="#FF9C8701" Grid.Row="1" Click="Clearitemsbtn_Click"/>
         <TextBox x:Name="toodenimi" HorizontalAlignment="Left" Height="20" Margin="50,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow" Text="toodenimi"/>
-        <DatePicker x:Name="kuupaev" HorizontalAlignment="Left" Margin="50,48,0,0" VerticalAlignment="Top" Width="147"/>
+        <DatePicker x:Name="kuupaev" HorizontalAlignment="Left" Margin="50,48,0,0" VerticalAlignment="Top" Width="147" FirstDayOfWeek="Monday"/>
         <TextBox x:Name="kood" HorizontalAlignment="Left" Height="20" Margin="50,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow" Text="kood"/>
         <TextBox x:Name="kaubakood" HorizontalAlignment="Left" Height="20" Margin="50,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow" Grid.Row="1" Text="kaubkood"/>
         <ComboBox x:Name="kaubanimi" HorizontalAlignment="Left" Margin="50,51,0,0" Grid.Row="1" VerticalAlignment="Top" Width="147"/>

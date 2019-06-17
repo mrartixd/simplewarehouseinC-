@@ -24,25 +24,16 @@ namespace lkartladu
         public SqlCommand cmd;
         const string connecttodb = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\Ladu.mdf;Integrated Security=True;";
         public readonly SqlConnection con = new SqlConnection(connecttodb);
-        public SqlDataAdapter adpt;
-        public DataTable dt;
+        public static SqlDataAdapter adpt;
+        public static DataTable dt;
         public static Inventuur inv = new Inventuur();
+        public static string ID;
          
 
         public MainWindow()
         {
             InitializeComponent();
-
-            try
-            {
-                con.Open();
-            }
-            catch(Exception e)
-            {
-                MessageBox.Show(e.ToString(), "Error connection!", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
             ShowData();
-
         }
 
         private void Exitbtn_Click(object sender, RoutedEventArgs e)
@@ -83,11 +74,11 @@ namespace lkartladu
         {
             try
             {
+                con.Open();
                 adpt = new SqlDataAdapter("SELECT * FROM [Inventuur]", con);
                 dt = new DataTable();
                 adpt.Fill(dt);
                 rawdata.ItemsSource = dt.DefaultView;
-                adpt.Update(dt);
                 con.Close();
             }
             catch (Exception e)
@@ -98,7 +89,7 @@ namespace lkartladu
 
         private void Rawdata_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)
         {
-            if(e.Column.Header.ToString()== "Id")
+            if(e.Column.Header.ToString()== "dd")
             {
                 e.Cancel = true;
             }
@@ -110,6 +101,7 @@ namespace lkartladu
             DataRowView row_selected = gd.SelectedItem as DataRowView;
             if(row_selected != null)
             {
+                ID = row_selected["Id"].ToString();
                 inv.Kuupaev = row_selected["Kuupaev"].ToString();
                 inv.Toode = row_selected["Toode"].ToString();
                 inv.Kood = row_selected["Kood"].ToString();
@@ -125,6 +117,43 @@ namespace lkartladu
                 inv.JaakSumma = row_selected["JaakSumma"].ToString();
                 inv.MuugSumma = row_selected["MuugiSumma"].ToString();
             }
+        }
+
+        private void Searchbtn_Click(object sender, RoutedEventArgs e)
+        {
+           
+        }
+
+        private void Refresh_Click(object sender, RoutedEventArgs e)
+        {
+            ShowData();
+        }
+
+        private void Deleteitem_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Confirm DELETE row", "Do you want delete?", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if(result == MessageBoxResult.Yes)
+            {
+                try
+                {
+                    con.Open();
+                    cmd = new SqlCommand("DELETE FROM [Inventuur] WHERE Id=" + ID + "", con);
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    ShowData();
+                    //add clear textblock and messagebox or somethning else
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString(), "Error insert into!", MessageBoxButton.OK, MessageBoxImage.Error);
+                    con.Close();
+                }
+            }
+            else
+            {
+                return;
+            }
+           
         }
     }
 }

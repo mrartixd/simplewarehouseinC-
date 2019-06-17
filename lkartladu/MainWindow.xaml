@@ -31,7 +31,8 @@
         <Button x:Name="settingsbtn" Content="Settings" HorizontalAlignment="Left" Margin="20,522,0,0" VerticalAlignment="Top" Width="296" Height="78" FontSize="22"/>
         <DataGrid x:Name="rawdata" AutoGenerateColumns="True" Grid.Column="1" HorizontalAlignment="Left" Height="481" Margin="10,80,0,0" VerticalAlignment="Top" Width="914" AutoGeneratingColumn="Rawdata_AutoGeneratingColumn" SelectionChanged="Rawdata_SelectionChanged"/>
         <TextBox x:Name="searchbox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,42,0,0" TextWrapping="Wrap" Text="Search" VerticalAlignment="Top" Width="692"/>
-        <Button Content="Search" Grid.Column="1" HorizontalAlignment="Left" Margin="761,42,0,0" VerticalAlignment="Top" Width="118" Height="23"/>
-        <Button x:Name="deleteitem" Content="Delete row" HorizontalAlignment="Left" Margin="592,581,0,0" VerticalAlignment="Top" Width="269" Height="39" FontSize="22" Grid.Column="1"/>
+        <Button x:Name="searchbtn" Content="Search" Grid.Column="1" HorizontalAlignment="Left" Margin="742,42,0,0" VerticalAlignment="Top" Width="69" Height="23" Click="Searchbtn_Click"/>
+        <Button x:Name="deleteitem" Content="Delete row" HorizontalAlignment="Left" Margin="592,581,0,0" VerticalAlignment="Top" Width="269" Height="39" FontSize="22" Grid.Column="1" Click="Deleteitem_Click"/>
+        <Button x:Name="refresh" Content="Refresh" Grid.Column="1" HorizontalAlignment="Left" Margin="836,42,0,0" VerticalAlignment="Top" Width="70" Height="23" Click="Refresh_Click"/>
     </Grid>
 </Window>

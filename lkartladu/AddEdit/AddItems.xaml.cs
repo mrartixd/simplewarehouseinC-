@@ -36,7 +36,20 @@ namespace lkartladu
 
         private void Clearitemsbtn_Click(object sender, RoutedEventArgs e)
         {
-            
+            kuupaev.Text = System.DateTime.Now.ToString();
+            toodenimi.Clear();
+            kood.Clear();
+            //kaubanimi.
+            kaubakood.Clear();
+            tk.Clear();
+            ostuhind.Clear();
+            hindtk.Clear();
+            //summa.Text = Convert.ToInt32(tk.Text) * Convert.ToInt32(hindtk.Text);
+            puhaskasum.Clear();
+            omakastus.Clear();
+            jaaktk.Clear();
+            //jaaksumma.Text = Convert.ToInt32(hindtk.Text) * Convert.ToInt32(jaaktk.Text);
+            muugisumma.Clear();
         }
 
         private void Cancelbtn_Click(object sender, RoutedEventArgs e)
@@ -50,7 +63,8 @@ namespace lkartladu
             {
                 main.con.Open();
                 main.cmd = new SqlCommand("INSERT INTO [Inventuur] (Kuupaev,Toode,Kood,Kaub,KaubKood,TK,OstuHind,HindTK,Summa,PuhasKasum,Omakasutus,JaatTK,JaakSumma,MuugiSumma) VALUES (@Kuupaev,@Toode,@Kood,@Kaub,@KaubKood,@TK,@OstuHind,@HindTK,@Summa,@PuhasKasum,@Omakasutus,@JaatTK,@JaakSumma,@MuugiSumma)", main.con);
-                main.cmd.Parameters.AddWithValue("@Kuupaev", kuupaev.Text);
+                
+                main.cmd.Parameters.AddWithValue("@Kuupaev", Convert.ToDateTime(kuupaev.Text));
                 main.cmd.Parameters.AddWithValue("@Toode", toodenimi.Text);
                 main.cmd.Parameters.AddWithValue("@Kood", kood.Text);
                 main.cmd.Parameters.AddWithValue("@Kaub", kaubanimi.SelectedValue);
@@ -65,13 +79,15 @@ namespace lkartladu
                 main.cmd.Parameters.AddWithValue("@JaakSumma", Convert.ToInt32(hindtk.Text) * Convert.ToInt32(jaaktk.Text));
                 main.cmd.Parameters.AddWithValue("@MuugiSumma", Convert.ToInt32(muugisumma.Text));
                 main.cmd.ExecuteNonQuery();
-                //add clear textblock and messagebox or somethning else
-                main.ShowData();
                 main.con.Close();
+                //add clear textblock and messagebox or somethning else
+                
+                
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.ToString(), "Error insert into!", MessageBoxButton.OK, MessageBoxImage.Error);
+                main.con.Close();
             }
             
         }
