@@ -63,3 +63,5 @@ C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\AddEdit\AddI
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\AddEdit\EditItems.g.cs
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\AddEdit\AddItems.baml
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\AddEdit\EditItems.baml
+C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\RdlCompile.cache
+C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\Debug\RdlCompile.compiled

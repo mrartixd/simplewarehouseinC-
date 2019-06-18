@@ -28,7 +28,7 @@
         <Button x:Name="sellitembtn" Content="Sell items" HorizontalAlignment="Left" Margin="20,362,0,0" VerticalAlignment="Top" Width="296" Height="79" FontSize="22" Click="Sellitembtn_Click"/>
         <Button x:Name="edititembtn" Content="Edit row" HorizontalAlignment="Left" Margin="62,581,0,0" VerticalAlignment="Top" Width="269" Height="39" FontSize="22" Click="Edititembtn_Click" Grid.Column="1"/>
         <Button x:Name="additembtn" Content="Add items" HorizontalAlignment="Left" Margin="20,42,0,0" VerticalAlignment="Top" Width="296" Height="79"  FontSize="22" Click="Additembtn_Click"/>
-        <Button x:Name="settingsbtn" Content="Settings" HorizontalAlignment="Left" Margin="20,522,0,0" VerticalAlignment="Top" Width="296" Height="78" FontSize="22"/>
+        <Button x:Name="settingsbtn" Content="Settings" HorizontalAlignment="Left" Margin="20,522,0,0" VerticalAlignment="Top" Width="296" Height="78" FontSize="22" Click="Settingsbtn_Click"/>
         <DataGrid x:Name="rawdata" AutoGenerateColumns="True" Grid.Column="1" HorizontalAlignment="Left" Height="481" Margin="10,80,0,0" VerticalAlignment="Top" Width="914" AutoGeneratingColumn="Rawdata_AutoGeneratingColumn" SelectionChanged="Rawdata_SelectionChanged"/>
         <TextBox x:Name="searchbox" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,42,0,0" TextWrapping="Wrap" Text="Search" VerticalAlignment="Top" Width="692"/>
         <Button x:Name="searchbtn" Content="Search" Grid.Column="1" HorizontalAlignment="Left" Margin="742,42,0,0" VerticalAlignment="Top" Width="69" Height="23" Click="Searchbtn_Click"/>

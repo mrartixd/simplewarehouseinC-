@@ -39,22 +39,31 @@ namespace lkartladu
             kuupaev.Text = System.DateTime.Now.ToString();
             toodenimi.Clear();
             kood.Clear();
-            //kaubanimi.
+            kaubanimi.SelectedValue = "0";
             kaubakood.Clear();
             tk.Clear();
             ostuhind.Clear();
             hindtk.Clear();
-            //summa.Text = Convert.ToInt32(tk.Text) * Convert.ToInt32(hindtk.Text);
+            summa.Text = "0";
             puhaskasum.Clear();
             omakastus.Clear();
             jaaktk.Clear();
-            //jaaksumma.Text = Convert.ToInt32(hindtk.Text) * Convert.ToInt32(jaaktk.Text);
+            jaaksumma.Text = "0";
             muugisumma.Clear();
         }
 
         private void Cancelbtn_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();
+            MessageBoxResult result = MessageBox.Show("Do you want cancel?", "Cancel edit", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            if (result == MessageBoxResult.Yes)
+            {
+                //main.con.Close();
+                this.Close();
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void Additembtn_Click(object sender, RoutedEventArgs e)

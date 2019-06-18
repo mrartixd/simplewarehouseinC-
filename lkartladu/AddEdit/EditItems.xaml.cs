@@ -80,5 +80,37 @@ namespace lkartladu
                 main.con.Close();
             }
         }
+
+        private void Clearitemsbtn_Click(object sender, RoutedEventArgs e)
+        {
+            kuupaev.Text = System.DateTime.Now.ToString();
+            toodenimi.Clear();
+            kood.Clear();
+            kaubanimi.SelectedValue = "0";
+            kaubakood.Clear();
+            tk.Clear();
+            ostuhind.Clear();
+            hindtk.Clear();
+            summa.Text = "0";
+            puhaskasum.Clear();
+            omakastus.Clear();
+            jaaktk.Clear();
+            jaaksumma.Text = "0";
+            muugisumma.Clear();
+        }
+
+        private void Cancelbtn_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Do you want cancel?", "Cancel edit", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+            if(result == MessageBoxResult.Yes)
+            {
+                //main.con.Close();
+                this.Close();
+            }
+            else
+            {
+                return;
+            }
+        }
     }
 }

@@ -155,5 +155,11 @@ namespace lkartladu
             }
            
         }
+
+        private void Settingsbtn_Click(object sender, RoutedEventArgs e)
+        {
+            Settings winsettings = new Settings();
+            winsettings.Show();
+        }
     }
 }

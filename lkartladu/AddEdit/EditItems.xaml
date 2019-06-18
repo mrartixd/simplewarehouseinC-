@@ -8,8 +8,8 @@
         Title="Edit items" Height="450" Width="900" MinWidth="900" MinHeight="450" Loaded="Window_Loaded">
     <Grid>
         <Button x:Name="updtitembtn" Content="UPDATE" HorizontalAlignment="Left" Margin="50,0,0,40" VerticalAlignment="Bottom" Width="201" Height="54" FontSize="20" Background="#FF57C55C" BorderBrush="#FF096600" Click="Updtitembtn_Click"/>
-        <Button x:Name="cancelbtn" Content="CANCEL" HorizontalAlignment="Right" Margin="0,0,51,40" VerticalAlignment="Bottom" Width="201" Height="54" FontSize="20" Background="#FFFB4848" BorderBrush="Red"/>
-        <Button x:Name="clearitemsbtn" Content="CLEAR" HorizontalAlignment="Center" Margin="388,0,404,40" VerticalAlignment="Bottom" Width="100" Height="54" FontSize="20" Background="#FFF7ED0F" BorderBrush="#FF9C8701"/>
+        <Button x:Name="cancelbtn" Content="CANCEL" HorizontalAlignment="Right" Margin="0,0,51,40" VerticalAlignment="Bottom" Width="201" Height="54" FontSize="20" Background="#FFFB4848" BorderBrush="Red" Click="Cancelbtn_Click"/>
+        <Button x:Name="clearitemsbtn" Content="CLEAR" HorizontalAlignment="Center" Margin="388,0,404,40" VerticalAlignment="Bottom" Width="100" Height="54" FontSize="20" Background="#FFF7ED0F" BorderBrush="#FF9C8701" Click="Clearitemsbtn_Click"/>
         <TextBox x:Name="toodenimi" HorizontalAlignment="Left" Height="20" Margin="50,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow" Text="toodenimi"/>
         <DatePicker x:Name="kuupaev" HorizontalAlignment="Left" Margin="50,48,0,0" VerticalAlignment="Top" Width="147"/>
         <TextBox x:Name="kood" HorizontalAlignment="Left" Height="20" Margin="50,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Cursor="Arrow" Text="kood"/>
