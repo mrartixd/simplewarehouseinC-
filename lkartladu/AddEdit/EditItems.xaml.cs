@@ -33,7 +33,7 @@ namespace lkartladu
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            kuupaev.Text = MainWindow.inv.Kuupaev;
+            kuupaev.Text = MainWindow.inv.Kuupaev.ToString("dd.mm.yyyy");
             toodenimi.Text = MainWindow.inv.Toode;
             kood.Text = MainWindow.inv.Kood;
             kaubanimi.Text = MainWindow.inv.Kaub;
@@ -101,16 +101,24 @@ namespace lkartladu
 
         private void Cancelbtn_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("Do you want cancel?", "Cancel edit", MessageBoxButton.YesNo, MessageBoxImage.Warning);
-            if(result == MessageBoxResult.Yes)
+            if(string.IsNullOrWhiteSpace(toodenimi.Text) && string.IsNullOrWhiteSpace(kood.Text))
             {
-                //main.con.Close();
                 this.Close();
             }
             else
             {
-                return;
+                MessageBoxResult result = MessageBox.Show("Do you want cancel?", "Cancel edit", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                if (result == MessageBoxResult.Yes)
+                {
+                    //main.con.Close();
+                    this.Close();
+                }
+                else
+                {
+                    return;
+                }
             }
+            
         }
     }
 }

@@ -15,6 +15,8 @@ using System.Windows.Shapes;
 using System.Data.Sql;
 using System.Data.SqlClient;
 using System.Data;
+using System.Configuration;
+using lkartladu.Forms;
 
 namespace lkartladu
 {
@@ -22,8 +24,7 @@ namespace lkartladu
     {
         //SQL Connection with SQLCommand
         public SqlCommand cmd;
-        const string connecttodb = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\Ladu.mdf;Integrated Security=True;";
-        public readonly SqlConnection con = new SqlConnection(connecttodb);
+        public readonly SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["lkartladu.Properties.Settings.LaduConnectionString"].ConnectionString);
         public static SqlDataAdapter adpt;
         public static DataTable dt;
         public static Inventuur inv = new Inventuur();
@@ -97,12 +98,15 @@ namespace lkartladu
 
         private void Rawdata_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            edititembtn.IsEnabled = true;
+            deleteitem.IsEnabled = true;
+            printbtn.IsEnabled = true;
             DataGrid gd = (DataGrid)sender;
             DataRowView row_selected = gd.SelectedItem as DataRowView;
             if(row_selected != null)
             {
                 ID = row_selected["Id"].ToString();
-                inv.Kuupaev = row_selected["Kuupaev"].ToString();
+                inv.Kuupaev = Convert.ToDateTime(row_selected["Kuupaev"].ToString());
                 inv.Toode = row_selected["Toode"].ToString();
                 inv.Kood = row_selected["Kood"].ToString();
                 inv.Kaub = row_selected["Kaub"].ToString();
@@ -160,6 +164,18 @@ namespace lkartladu
         {
             Settings winsettings = new Settings();
             winsettings.Show();
+        }
+
+        private void Rawdata_LostFocus(object sender, RoutedEventArgs e)
+        {
+            //edititembtn.IsEnabled = false;
+            //deleteitem.IsEnabled = false;
+        }
+
+        private void Printbtn_Click(object sender, RoutedEventArgs e)
+        {
+            BillPage billPage = new BillPage();
+            billPage.Show();
         }
     }
 }

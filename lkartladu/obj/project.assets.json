@@ -1,0 +1,302 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.7.2": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "EntityFramework.SqlServerCompact/6.2.0": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.2.0",
+          "Microsoft.SqlServer.Compact": "4.0.8876.1"
+        },
+        "compile": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {}
+        }
+      },
+      "Microsoft.SqlServer.Compact/4.0.8876.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "EntityFramework.SqlServerCompact/6.2.0": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.2.0",
+          "Microsoft.SqlServer.Compact": "4.0.8876.1"
+        },
+        "compile": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {}
+        }
+      },
+      "Microsoft.SqlServer.Compact/4.0.8876.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x64": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "EntityFramework.SqlServerCompact/6.2.0": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.2.0",
+          "Microsoft.SqlServer.Compact": "4.0.8876.1"
+        },
+        "compile": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {}
+        }
+      },
+      "Microsoft.SqlServer.Compact/4.0.8876.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.7.2/win-x86": {
+      "EntityFramework/6.2.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {},
+          "lib/net45/EntityFramework.dll": {}
+        }
+      },
+      "EntityFramework.SqlServerCompact/6.2.0": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.2.0",
+          "Microsoft.SqlServer.Compact": "4.0.8876.1"
+        },
+        "compile": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {}
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {}
+        }
+      },
+      "Microsoft.SqlServer.Compact/4.0.8876.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EntityFramework/6.2.0": {
+      "sha512": "ptGyXOf26qLrtn+2doAmylIlCxOnBJANwlyyLrXDmqIk9O18IzLWHyxDwwAyhgXkxmbiaA0WNpRy67WRReInBw==",
+      "type": "package",
+      "path": "entityframework/6.2.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.transform",
+        "entityframework.6.2.0.nupkg.sha512",
+        "entityframework.nuspec",
+        "lib/net40/EntityFramework.SqlServer.dll",
+        "lib/net40/EntityFramework.SqlServer.xml",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.SqlServer.dll",
+        "lib/net45/EntityFramework.SqlServer.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "tools/EntityFramework.PowerShell.Utility.dll",
+        "tools/EntityFramework.PowerShell.dll",
+        "tools/EntityFramework.psd1",
+        "tools/EntityFramework.psm1",
+        "tools/about_EntityFramework.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/migrate.exe"
+      ]
+    },
+    "EntityFramework.SqlServerCompact/6.2.0": {
+      "sha512": "pGPxxPUCsckMg/UP/EOfklanNCCGIQvJzMBt56UnjwutzlVni7dJL92LFeQR2foI+O2E4NjlCaWWHXxGI7gpQw==",
+      "type": "package",
+      "path": "entityframework.sqlservercompact/6.2.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.transform",
+        "entityframework.sqlservercompact.6.2.0.nupkg.sha512",
+        "entityframework.sqlservercompact.nuspec",
+        "lib/net40/EntityFramework.SqlServerCompact.dll",
+        "lib/net40/EntityFramework.SqlServerCompact.xml",
+        "lib/net45/EntityFramework.SqlServerCompact.dll",
+        "lib/net45/EntityFramework.SqlServerCompact.xml",
+        "tools/install.ps1"
+      ]
+    },
+    "Microsoft.SqlServer.Compact/4.0.8876.1": {
+      "sha512": "CKh6YxPd7/FApB3y5/mZyqkTVKDkbYFUf/tbDAwHlKLrIKRlJ7/VPLMqHX0izl4B0Yey+qMIVo7izGTSi/9ang==",
+      "type": "package",
+      "path": "microsoft.sqlserver.compact/4.0.8876.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/web.config.transform",
+        "NativeBinaries/amd64/Microsoft.VC90.CRT/Microsoft.VC90.CRT.manifest",
+        "NativeBinaries/amd64/Microsoft.VC90.CRT/README_ENU.txt",
+        "NativeBinaries/amd64/Microsoft.VC90.CRT/msvcr90.dll",
+        "NativeBinaries/amd64/sqlceca40.dll",
+        "NativeBinaries/amd64/sqlcecompact40.dll",
+        "NativeBinaries/amd64/sqlceer40EN.dll",
+        "NativeBinaries/amd64/sqlceme40.dll",
+        "NativeBinaries/amd64/sqlceqp40.dll",
+        "NativeBinaries/amd64/sqlcese40.dll",
+        "NativeBinaries/x86/Microsoft.VC90.CRT/Microsoft.VC90.CRT.manifest",
+        "NativeBinaries/x86/Microsoft.VC90.CRT/README_ENU.txt",
+        "NativeBinaries/x86/Microsoft.VC90.CRT/msvcr90.dll",
+        "NativeBinaries/x86/sqlceca40.dll",
+        "NativeBinaries/x86/sqlcecompact40.dll",
+        "NativeBinaries/x86/sqlceer40EN.dll",
+        "NativeBinaries/x86/sqlceme40.dll",
+        "NativeBinaries/x86/sqlceqp40.dll",
+        "NativeBinaries/x86/sqlcese40.dll",
+        "SQLCE_EULA_ENU.rtf",
+        "lib/net40/System.Data.SqlServerCe.dll",
+        "microsoft.sqlserver.compact.4.0.8876.1.nupkg.sha512",
+        "microsoft.sqlserver.compact.nuspec",
+        "tools/Install.ps1",
+        "tools/Uninstall.ps1",
+        "tools/VS.psd1",
+        "tools/VS.psm1"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.7.2": [
+      "EntityFramework.SqlServerCompact >= 6.2.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\artix\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\artix\\source\\repos\\simplewarehouseinC-\\lkartladu\\lkartladu.csproj",
+      "projectName": "lkartladu",
+      "projectPath": "C:\\Users\\artix\\source\\repos\\simplewarehouseinC-\\lkartladu\\lkartladu.csproj",
+      "packagesPath": "C:\\Users\\artix\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\artix\\source\\repos\\simplewarehouseinC-\\lkartladu\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\artix\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net472"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net472": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net472": {
+        "dependencies": {
+          "EntityFramework.SqlServerCompact": {
+            "target": "Package",
+            "version": "[6.2.0, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}
