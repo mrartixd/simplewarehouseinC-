@@ -35,5 +35,6 @@
         <Button x:Name="deleteitem" Content="Delete row" HorizontalAlignment="Right" Margin="592,581,30,0" VerticalAlignment="Top" Width="269" Height="39" FontSize="22" Grid.Column="1" Click="Deleteitem_Click" IsEnabled="False"/>
         <Button x:Name="refresh" Content="Refresh" Grid.Column="1" HorizontalAlignment="Left" Margin="836,42,0,0" VerticalAlignment="Top" Width="70" Height="23" Click="Refresh_Click"/>
         <Button x:Name="printbtn" Content="Print" HorizontalAlignment="Right" Margin="0,581,330,0" VerticalAlignment="Top" Width="269" Height="39" FontSize="22" Grid.Column="1" IsEnabled="False" Click="Printbtn_Click"/>
+        <Button x:Name="repairitembtn" Content="Repair item" HorizontalAlignment="Left" Margin="20,200,0,0" VerticalAlignment="Top" Width="296" Height="79" FontSize="22" Click="Repairitembtn_Click"/>
     </Grid>
 </Window>

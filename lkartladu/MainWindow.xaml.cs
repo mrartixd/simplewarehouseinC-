@@ -177,5 +177,11 @@ namespace lkartladu
             BillPage billPage = new BillPage();
             billPage.Show();
         }
+
+        private void Repairitembtn_Click(object sender, RoutedEventArgs e)
+        {
+            Repair repair = new Repair();
+            repair.Show();
+        }
     }
 }

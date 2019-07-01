@@ -1,0 +1,30 @@
+﻿<Window x:Class="lkartladu.Forms.Repair"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:rv="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms"
+        xmlns:local="clr-namespace:lkartladu.Forms"
+        mc:Ignorable="d"
+        Title="Repair" Height="800" Width="800">
+    <Grid>
+        <WindowsFormsHost HorizontalAlignment="Left" Height="371" Margin="15,388,0,0" VerticalAlignment="Top" Width="772">
+            <rv:ReportViewer x:Name="_repairReport"/>
+        </WindowsFormsHost>
+        <Rectangle Fill="#FFF4F4F5" Height="4" Margin="10,379,0,0" Stroke="Black" VerticalAlignment="Top" Width="772"/>
+        <Button Content="Print" HorizontalAlignment="Left" Margin="320,332,0,0" VerticalAlignment="Top" Width="120" Height="25" Click="Button_Click"/>
+        <TextBox x:Name="klient" HorizontalAlignment="Left" Height="23" Margin="214,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="telefone" HorizontalAlignment="Left" Height="23" Margin="214,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="seadme" HorizontalAlignment="Left" Height="23" Margin="214,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="rike" HorizontalAlignment="Left" Height="23" Margin="214,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="146,83,0,0" TextWrapping="Wrap" Text="Klient" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="146,125,0,0" TextWrapping="Wrap" Text="Telefone" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="146,172,0,0" TextWrapping="Wrap" Text="Seadme" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="146,220,0,0" TextWrapping="Wrap" Text="Rike" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="432,150,0,0" TextWrapping="Wrap" Text="Komplektis " VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkseade" Content="seade" HorizontalAlignment="Left" Margin="536,109,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chklaadija" Content="laadija" HorizontalAlignment="Left" Margin="536,146,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkkarp" Content="karp või kott" HorizontalAlignment="Left" Margin="536,184,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="muu" HorizontalAlignment="Left" Height="23" Margin="536,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="ei ole"/>
+    </Grid>
+</Window>

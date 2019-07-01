@@ -89,8 +89,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Class\Inventuur.cs" />
+    <Compile Include="Class\Order.cs" />
     <Compile Include="Forms\BillPage.xaml.cs">
       <DependentUpon>BillPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Repair.xaml.cs">
+      <DependentUpon>Repair.xaml</DependentUpon>
     </Compile>
     <Compile Include="LaduDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -112,6 +116,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Forms\BillPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Forms\Repair.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -161,6 +169,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="RepairReport.rdlc" />
     <None Include="LaduDataSet.xsc">
       <DependentUpon>LaduDataSet.xsd</DependentUpon>
     </None>

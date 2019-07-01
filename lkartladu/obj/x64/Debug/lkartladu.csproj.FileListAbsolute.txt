@@ -11,7 +11,6 @@ C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\bin\x64\Debug\Microsof
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\bin\x64\Debug\System.Data.SqlServerCe.dll
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\bin\x64\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\bin\x64\Debug\Microsoft.SqlServer.Types.dll
-C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\x64\Debug\lkartladu.csprojAssemblyReference.cache
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\x64\Debug\Forms\BillPage.baml
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\x64\Debug\AddEdit\AddItems.g.cs
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\x64\Debug\AddEdit\EditItems.g.cs
@@ -38,3 +37,6 @@ C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\x64\Debug\lkartlad
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\x64\Debug\lkartladu.exe
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\x64\Debug\lkartladu.pdb
 C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\x64\Debug\lkartladu.exe.config
+C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\x64\Debug\Forms\Repair.g.cs
+C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\x64\Debug\Forms\Repair.baml
+C:\Users\artix\source\repos\simplewarehouseinC-\lkartladu\obj\x64\Debug\lkartladu.csprojAssemblyReference.cache
